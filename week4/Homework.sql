@@ -2,9 +2,9 @@
 -- so we learned how to create and drop table
 -- we also learned where and from
 
-DROP TABLE IF EXISTS PATIENT;
+DROP TABLE IF EXISTS PATIENT; --this one so that it clear the prev table
 CREATE TABLE PATIENT(
-	Pid			VARCHAR(30)			NOT NULL,
+	Pid			VARCHAR(30)			NOT NULL, -- mandatoey
 	Fname		VARCHAR(30)			NOT NULL,
 	Minit		CHAR,
 	Lname		VARCHAR(30)			NOT NULL,
@@ -15,10 +15,10 @@ CREATE TABLE PATIENT(
 	Zip			VARCHAR(5),
 	Phone		VARCHAR(10)			NOT NULL,
 	Sex			CHAR,
-  PRIMARY KEY (Pid)
+  PRIMARY KEY (Pid) --unique not null
 );
 
-INSERT INTO PATIENT (Pid, Fname, Minit, Lname, Bdate, Street, City, State, Zip, Phone, Sex)
+INSERT INTO PATIENT (Pid, Fname, Minit, Lname, Bdate, Street, City, State, Zip, Phone, Sex) -- this one is to add value
 VALUES ('1','John','A','Smith','1952-01-01','1206 Fox Hollow Rd.','Pittsburgh','PA','15213','6789871234','M');
 
 INSERT INTO PATIENT (Pid, Fname, Minit, Lname, Bdate, Street, City, State, Zip, Phone, Sex)
